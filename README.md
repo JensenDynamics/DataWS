@@ -10,9 +10,19 @@ DataWS is a platform independent library for Data transmission via Web-socket in
 
 using namespace DataWS;
 
+double myDataArray = new double[2048];
+
 int main()
 {
+DataWS dws;
 
+while(dws.alive())
+{
+  
+dws.sendDoubleArray(myDataArray,sizeof(myDataArray));
+
+
+}
 return 0;
 }
 ```
