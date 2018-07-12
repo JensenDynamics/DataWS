@@ -25,7 +25,7 @@ while(dws.alive())
   
 dws.sendDoubleArray(myDataArray,sizeof(myDataArray)); //send a double array to a websocket
 
-dws.sendInt(
+dws.sendInt(15234);
 
 
 }
