@@ -4,7 +4,7 @@ DataWS is a platform independent library for Data transmission via Web-socket in
 
 ## Example Code
 
-
+These examples send an array of data to the Browser every second until the socket is disconnected. 
 
 ### C++ Code Example:
 ```CPP
@@ -27,6 +27,7 @@ dws.sendDoubleArray(myDataArray,sizeof(myDataArray)); //send a double array to a
 
 dws.sendInt(15234);
 
+wait(1);
 
 }
 return 0;
@@ -37,7 +38,13 @@ return 0;
 ```Python
 import DataWS
 
-dws.setupServer("0.0.0.0","1234"); 
+dws.setupServer("0.0.0.0","1234")
+
+
+
+while dws.alive():
+  dws.sendDoubleArray(myDataArray,sizeof(myDataArray))
+  wait(1)
 
 ```
 
