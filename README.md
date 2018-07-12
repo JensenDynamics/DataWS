@@ -3,6 +3,20 @@ DataWS is a platform independent library for Data transmission via Web-socket in
 
 
 
+## Example Code
+
+```CPP
+#include "DataWS.h"
+
+using namespace DataWS;
+
+int main()
+{
+
+return 0;
+}
+```
+
 ## Function List
 
 
