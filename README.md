@@ -5,6 +5,9 @@ DataWS is a platform independent library for Data transmission via Web-socket in
 
 ## Example Code
 
+
+
+### C++ Code Example:
 ```CPP
 #include "DataWS.h"
 
@@ -27,6 +30,18 @@ return 0;
 }
 ```
 
+### Python Code Example:
+```Python
+import DataWS
+
+
+```
+
+
 ## Function List
 
 
+```CPP
+alive(); 
+```
+Returns 1 if no faults in the server. If false returns a negative value.  
